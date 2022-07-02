@@ -26,7 +26,8 @@ function onMessageHandler(target, context, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
-  const commandName = msg.trim();
+  const args = msg.split(' ')
+  const commandName = args[1];
 
   // If the command is known, let's execute it
   if (commandName === '!dice') {
@@ -35,6 +36,13 @@ function onMessageHandler(target, context, msg, self) {
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
+  }
+
+  // if the command is for DA info, lookup the pokemon added //
+  if (commandName === '!DA') {
+    const
+
+    client.say(target, )
   }
 }
 

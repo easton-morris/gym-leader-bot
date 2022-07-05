@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/easton-morris/gym-leader-bot#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "tmi.js": "^1.8.5"
   }
 }

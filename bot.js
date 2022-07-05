@@ -1,4 +1,5 @@
 const tmi = require('tmi.js');
+const dotenv = require('dotenv');
 
 // Define configuration options
 const opts = {

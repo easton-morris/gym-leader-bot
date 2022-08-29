@@ -40,8 +40,12 @@ function onMessageHandler(target, context, msg, self) {
   }
 
   // if the command is for DA info, lookup the pokemon added //
-  if (commandName === '!DA') {
-    const
+  if (commandName === '!assign') {
+    const pkmnName = args[2];
+
+    if (pkmnName) {
+      client.say(target, `Assigned ${pkmnName} as your partner!`)
+    };
 
     client.say(target, )
   }
